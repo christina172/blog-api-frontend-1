@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header,
+footer {
+    padding: 8px;
+    background-color: tan;
+}
+
+h1,
+h2,
+footer p {
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
