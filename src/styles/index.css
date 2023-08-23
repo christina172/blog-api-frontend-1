@@ -23,4 +23,51 @@ footer p {
 
 main {
     flex: 1;
+    padding: 10px;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.post-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-text-preview {
+    width: 70vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @supports (-webkit-line-clamp: 2) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: initial;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.post-date {
+    font-style: italic;
+}
+
+.post-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
