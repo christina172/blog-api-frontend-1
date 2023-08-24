@@ -13,7 +13,26 @@
     </header>
     <main>
         <a href="./index.html">Return to Home page</a>
-        <h2>Post</h2>
+        <div class="post-container">
+            <h2 class="post-title"></h2>
+            <p class="post-date"></p>
+            <p class="post-text"></p>
+            <h3>Comments</h3>
+            <form method="POST">
+                <div class="form-item">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="author" required maxlength="100">
+                </div>
+                <div class="form-item">
+                    <label for="comment-text">Comment:</label>
+                    <textarea name="text" id="comment-text" cols="30" rows="2" required maxlength="1000"></textarea>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <div class="comments"></div>
+        </div>
     </main>
     <footer>
         <p>Made by <a href="https://github.com/christina172?tab=repositories">christina172</a></p>

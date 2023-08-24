@@ -1,3 +1,58 @@
 body {
     background-color: rgb(252, 246, 237);
 }
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 90vw;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.post-date {
+    align-self: flex-end;
+}
+
+form,
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-item {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+input,
+textarea {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 2px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+textarea {
+    padding: 0 3px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.comment-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 320px) {
+    .comment-info {
+        flex-direction: column;
+    }
+}

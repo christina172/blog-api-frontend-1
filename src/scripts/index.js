@@ -1,5 +1,5 @@
 import "../styles/index.css";
-import { getPosts } from "./get-posts-logic";
-import { displayError, displayPosts } from "./get-posts-dom";
+import { getPosts } from "./get-posts";
+import { displayError, displayPosts } from "./display-posts";
 
 getPosts().then(displayPosts).catch(displayError);

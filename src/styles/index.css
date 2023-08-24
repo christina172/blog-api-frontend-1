@@ -34,13 +34,13 @@ main {
     padding: 10px 0;
 }
 
-.post-container {
+.post-container-preview {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
 
-.post-info {
+.post-info-preview {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -62,12 +62,19 @@ main {
     }
 }
 
-.post-date {
+.post-date-preview {
     font-style: italic;
 }
 
-.post-link {
+.post-link-preview {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 500px) {
+    .post-container-preview {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
