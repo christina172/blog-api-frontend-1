@@ -5,6 +5,7 @@ async function getPost(id) {
         return { post, allCommentsToAPost, id };
     } catch (error) {
         console.log(error);
+        throw new Error(error);
     }
 };
 

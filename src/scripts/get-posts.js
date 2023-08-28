@@ -5,6 +5,7 @@ async function getPosts() {
         return posts;
     } catch (error) {
         console.log(error);
+        throw new Error(error);
     }
 };
 
