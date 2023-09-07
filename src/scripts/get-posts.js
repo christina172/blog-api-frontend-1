@@ -1,6 +1,6 @@
 async function getPosts() {
     try {
-        let response = await fetch("http://localhost:3000/blog/posts");
+        let response = await fetch("https://blog-api-3e85.onrender.com/blog/posts");
         let posts = await response.json();
         return posts;
     } catch (error) {

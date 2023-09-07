@@ -10,7 +10,7 @@ function submitComment(e, id) {
     const checkVal = form.checkValidity();
     form.reportValidity();
     if (checkVal) {
-        fetch(`http://localhost:3000/blog/posts/${id}/comments`, {
+        fetch(`https://blog-api-3e85.onrender.com/blog/posts/${id}/comments`, {
             method: "POST",
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -40,7 +40,7 @@ function displayPost(response) {
     const postDate = document.querySelector(".post-date");
     postDate.textContent = `Published on ${format(new Date(post.timestamp), "PPPp")}`;
 
-    form.setAttribute("action", `http://localhost:3000/blog/posts/${id}/comments`);
+    form.setAttribute("action", `https://blog-api-3e85.onrender.com/blog/posts/${id}/comments`);
     form.addEventListener("submit", (e) => {
         submitComment(e, id)
     });
