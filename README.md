@@ -5,4 +5,4 @@ This is the first front end for the blog api. The site consists of two pages and
 
 I have used webpack in this project and plain HTML and CSS with no front-end frameworks.
 
-Live preview link https://christina172.github.io/blog-api-frontend-1/
+Live preview link (please, wait for several minutes for the server to start working - the API is hosted on render) https://christina172.github.io/blog-api-frontend-1/ 
